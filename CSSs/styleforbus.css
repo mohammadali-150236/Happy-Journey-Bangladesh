@@ -1,0 +1,219 @@
+body {
+    font-feature-settings: normal;
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-variation-settings: normal;
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    width:0.3rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: rgb(162,205,243.1);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #007BFF;
+    transition: background .05s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: rgb(127, 255, 212);
+}
+
+header {
+    background-color: rgba(95, 255, 247);
+    padding: 0; /* Reset padding to zero */
+    margin: 0; /* Reset margin to zero  */
+    box-shadow: 5px 5px 10px grey;
+    position: fixed;
+    top: 0;
+    width:100%;
+}
+
+header h1 {
+    text-align: center;
+    padding: 3%;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    header h1 {
+        padding: 2%;
+    }
+
+    nav{
+        width: 100%;
+    }
+}
+
+main{
+    margin: 10% 0;
+}
+
+main .main_1{
+    margin: 5%;
+    font-weight: bold;
+    color: red;
+}
+
+main .main_2{
+    margin: 5%;
+}
+
+main .main_2 .container .item{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 2%;
+    box-shadow: 5px 5px 10px grey;
+    transition: margin-bottom 1s ease, box-shadow 1s ease;
+}
+
+main .main_2 .container .item:hover{
+    margin-bottom: 5%;
+    box-shadow: 10px 10px 15px grey;
+}
+
+main .main_2 .container .item .i_1 img{
+    margin: 2%;
+}
+
+main .main_2 .container .item .i_2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 2% 2% 2%;
+}
+
+main .main_2 .container .item .i_2 h2{
+    flex: 4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: 1px solid grey;
+}
+
+main .main_2 .container .item .i_2 nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 1%;
+    transition: all 0.5s linear;
+    font-weight: 500;
+}
+
+main .main_2 .container .item .i_2 nav:hover{
+    color:blue;
+    font-weight: bold;
+}
+
+main .main_2 .container .item .i_3{
+    margin: 1%;
+}
+
+main .main_2 .container .item .i_3 button{
+    padding: 10px;
+    
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    width: 100%; /* Adjusted width for better spacing */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    text-align: center; /* Center text */
+    font-weight: bold;
+    box-shadow: 5px 5px 10px grey;
+}
+
+main .main_2 .container .item .i_3 button:hover{
+    background-color: rgb(127, 255, 212);
+    color: rgb(0,0,0);
+}
+
+main .main_3 .shohagh,.hanif,.green,.shyamoli,.eagle,.imperial,.robi,.falguni{
+    z-index: 999;
+    height: 100vh;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.753);
+    backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: scroll;
+    padding: 2%;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+main .main_3 div i{
+    font-size: 24px;
+    cursor: pointer;
+    margin: 3%;
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+    transition: font-size 0.2s ease;
+    width: 100%;
+}
+
+main .main_3 div i:hover{
+    font-size: 28px;
+}
+
+footer{
+    padding: 2%;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+ 
+footer button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer button i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    font-size: 22px;
+}
+
+footer button div{
+    margin: 1%;
+    font-weight: bold;
+}
+
+footer button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px grey;
+    width: 150px;
+}
+
+footer button:hover {
+    background-color: rgb(127, 255, 212);
+    color: rgb(0, 0, 0);
+}
+
