@@ -1,0 +1,134 @@
+body {
+    font-feature-settings: normal;
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-variation-settings: normal;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(162, 205, 243.1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #007BFF;
+    transition: background .05s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(127, 255, 212);
+}
+
+h1 {
+    background-color: rgba(95, 255, 247); /* Adjusted alpha value for a solid background */
+    box-shadow: 5px 5px 10px grey;
+    text-align: center;
+    padding: 2%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    margin: 0;
+}
+
+
+main.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 120px; /* Adjusted margin to prevent overlap with the fixed header */
+}
+
+main.container div {
+    margin: 5% 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+main.container div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 800px) {
+    main.container div {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+main.container div h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+main.container div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    text-decoration: none;
+}
+
+footer {
+    padding: 2%;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+footer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer button i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    font-size: 22px;
+}
+
+footer button div {
+    margin: 1%;
+    font-weight: bold;
+}
+
+footer button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px grey;
+    width: 150px;
+}
+
+footer button:hover {
+    background-color: rgb(127, 255, 212);
+    color: rgb(0, 0, 0);
+}

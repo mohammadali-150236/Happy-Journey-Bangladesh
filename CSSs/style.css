@@ -1,0 +1,284 @@
+body {
+    font-feature-settings: normal;
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-variation-settings: normal;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body::-webkit-scrollbar{
+    width:0.3rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: rgb(162,205,243.1);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #007BFF;
+    transition: background .05s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: rgb(127, 255, 212);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_head_1 {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    background-color: rgb(162, 205, 243);
+    box-sizing: border-box;
+    font-size: small;
+    font-weight: bold;
+}
+
+.top_head_1 a {
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    padding: 10px; /* Set padding to equalize the size */
+    display: block; /* Make anchors block-level elements to occupy full width */
+    transition: 500ms linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_head_1 a:hover{
+    background-color: rgb(250, 235, 215);
+}
+
+.top_head_2 {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(95, 255, 247, 0.428);
+    box-shadow: 5px 5px 10px grey;
+    min-height: 200px;
+}
+
+.top_head_2 .item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin:2%;
+}
+
+.top_head_2 .item1 img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+}
+
+.top_head_2 .item2 {
+    flex: 6;
+    margin: 1.5%;
+    display: flex;
+    align-items: center;
+}
+
+.top_head_2 .item3 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1%;
+}
+
+.top_head_2 .item3 .icon{
+    font-size: 2em;
+    margin-right: 10%;
+}
+
+.top_head_2 .item3 nav {
+    display: none;
+    font-weight: 600;
+    transition: max-height 1s ease-in-out; /* Added transition for smooth opening and closing */
+    max-height: 0; /* Set initial max-height to 0 */
+    overflow: hidden; /* Hide overflow content */
+    border-left: 5px solid rgb(128,128,128);
+    margin: 10% 0 10% 0;
+}
+
+.top_head_2 .item3.active nav {
+    max-height: 200px; /* Adjust the value based on your content */
+}
+
+.top_head_2 .item3 nav ul {
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+    margin: 0;
+}
+
+.top_head_2 .item3 nav ul li {
+    width: 100%; /* Set equal width for all list items */
+    margin-bottom: 5px;
+}
+
+.top_head_2 .item3 nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease; /* Added transition for background color change */
+    display: block;
+    padding: 10px; /* Add padding for better readability */
+}
+
+.top_head_2 .item3 nav ul li a:hover {
+    background-color: rgb(109, 239, 196);
+}
+
+.container {
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap; /* Allow children to wrap on smaller screens */
+}
+
+.container > div {
+    flex: 1;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Switch to column direction on smaller screens */
+    }
+}
+
+.container .para{
+    color-scheme:light ;
+}
+
+.container .images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+}
+
+.container .images img {
+    max-height: 150px; /* Adjust the max-height as needed */
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.container .buttons {
+    display: flex;
+    flex-direction: column; /* Set to column for better layout on smaller screens */
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.container .buttons button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    width: calc(80% - 20px); /* Adjusted width for better spacing */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    text-align: center; /* Center text */
+    font-weight: bold;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.container .buttons button:hover{
+    background-color: rgb(127, 255, 212);
+    color: rgb(0,0,0);
+}
+
+@media only screen and (max-width: 600px) {
+    .container .buttons button {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+footer{
+    padding: 2%;
+    background-color: darkgrey;
+    margin-top: auto;
+}
+
+footer .caution{
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-small;
+}
+
+footer .foot .bottom_tail_2 .about img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+footer .foot .bottom_tail_2{
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5%;
+}
+
+footer .foot .bottom_tail_2 .about{
+    flex: 2;
+    border-right: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .foot .bottom_tail_2 .about a{
+    color: black;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+footer .foot .bottom_tail_2 .about a:hover{
+    color: blue;
+}
+
+footer .foot .bottom_tail_1{
+    border-top: 1px solid grey;
+    text-align: center;
+}
+
+footer .foot .bottom_tail_2 .social-icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 5;
+}
+
+footer .foot .bottom_tail_2 .social-icons a{
+    margin: 1.5%;
+    padding: 2%;
+}
+
+footer .foot .bottom_tail_2 .social-icons a i{
+    color: rgb(0, 81, 151);
+    font-size:24px;
+}
+
+footer .foot .bottom_tail_2 .social-icons a i:hover{
+    color:blue;
+}

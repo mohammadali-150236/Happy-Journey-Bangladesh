@@ -1,0 +1,84 @@
+body {
+    font-feature-settings: normal;
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-variation-settings: normal;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(162, 205, 243.1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #007BFF;
+    transition: background .05s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(127, 255, 212);
+}
+
+footer {
+    padding: 2%;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    z-index:999;
+    width:100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px grey;
+    width: 150px;
+}
+
+button:hover {
+    background-color: rgb(127, 255, 212);
+    color: rgb(0, 0, 0);
+}
+
+main{
+    margin:10% 2%;
+    font-weight: bold;
+    font-size: large;
+}
+
+h1 {
+    background-color: rgba(95, 255, 247);
+    box-shadow: 5px 5px 10px grey;
+    text-align: center;
+    padding: 2%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    margin: 0;
+}
+.fab{
+    color: green;
+    font-size: 22px;
+}
