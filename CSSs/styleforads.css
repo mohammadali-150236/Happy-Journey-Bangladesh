@@ -39,7 +39,7 @@ h1 {
 }
 
 .div, .a, .b, .c {
-    margin: 15% 2%;
+    margin: 15% 4%;
     display: flex;
     justify-content: center;
     align-items: center; /* Align items at the center */
