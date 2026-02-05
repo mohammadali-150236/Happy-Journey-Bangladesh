@@ -29,7 +29,7 @@ function brtc() {
 }
 
 function b() {
-    window.location.href = "index.html";
+    window.history.back();
 }
 
 function imperial() {

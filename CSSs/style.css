@@ -156,6 +156,10 @@ header {
     .container {
         flex-direction: column; /* Switch to column direction on smaller screens */
     }
+
+    .top_head_2 .item1 img{
+        display: none;
+    }
 }
 
 .container .para{
